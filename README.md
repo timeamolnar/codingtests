@@ -1,7 +1,7 @@
 # Repository for Coding Tests #
 
 
-**FizzBuzzBasic:**
+**FizzBuzzBasic :**
 Write some code that prints out the following for a contiguous range of numbers:
 
 * the number
@@ -9,7 +9,7 @@ Write some code that prints out the following for a contiguous range of numbers:
 * 'buzz' for numbers that are multiples of 5
 * 'fizzbuzz' for numbers that are multiples of 15
 
-e.g. if I run the program over a range from 1-20 I should get the following output
+e.g. if I run the program over a range from 1-20 I should get the following output:
 
 
 ```
