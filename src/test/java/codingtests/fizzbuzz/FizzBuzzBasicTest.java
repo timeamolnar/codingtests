@@ -2,6 +2,8 @@ package codingtests.fizzbuzz;
 
 import org.junit.Test;
 
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
 import java.util.Arrays;
 
 import static org.junit.Assert.*;
@@ -66,5 +68,33 @@ public class FizzBuzzBasicTest {
   @Test
   public void forNumbersFromOneToFifteenShouldBeConvertedToFizzBuzzList() {
     assertEquals(Arrays.asList(new String[]{"1", "2", "fizz", "4", "buzz", "fizz", "7", "8", "fizz", "buzz", "11", "fizz", "13", "14", "fizzbuzz"}), fb.getFizzBuzzValuesForNumbers(1,15));
+  }
+
+  @Test
+  public void convertToFizzBuzzAndOutShouldConvertNumbersTillUpperBound(){
+    ByteArrayOutputStream baos = new ByteArrayOutputStream();
+    PrintStream ps = new PrintStream(baos);
+
+    fb.convertToFizzBuzzAndOut(20,ps);
+    assertEquals("1\n" +
+            "2\n" +
+            "fizz\n" +
+            "4\n" +
+            "buzz\n" +
+            "fizz\n" +
+            "7\n" +
+            "8\n" +
+            "fizz\n" +
+            "buzz\n" +
+            "11\n" +
+            "fizz\n" +
+            "13\n" +
+            "14\n" +
+            "fizzbuzz\n" +
+            "16\n" +
+            "17\n" +
+            "fizz\n" +
+            "19\n" +
+            "buzz\n", baos.toString());
   }
 }
