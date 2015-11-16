@@ -1,6 +1,5 @@
 # Repository for Coding Tests #
 
-
 **FizzBuzzBasic :**
 Write some code that prints out the following for a contiguous range of numbers:
 
@@ -19,10 +18,9 @@ e.g. if I run the program over a range from 1-20 I should get the following outp
 
 ```
 
-**RomanNumeralToInteger :**
+**IntegerToRomanNumeral :**
 
-- convert Roman Numeral to Integer use TDD
-
+Convert Integer to Roman Numeral using TDD
 
 Create a function taking a positive integer as its parameter and returning a string containing the Roman Numeral representation of that integer.
 
@@ -34,6 +32,7 @@ In Roman numerals 1990 is rendered: 1000=M, 900=CM, 90=XC; resulting in MCMXC.
 
 1666 uses each Roman symbol in descending order: MDCLXVI.
 
-**IntegerToRomanNumeral :**
 
-- convert Integer to Roman Numeral use TDD
+**RomanNumeralToInteger :**
+
+Convert Roman Numeral to Integer using TDD
