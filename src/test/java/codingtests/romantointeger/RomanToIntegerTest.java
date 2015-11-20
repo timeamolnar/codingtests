@@ -33,4 +33,10 @@ public class RomanToIntegerTest {
         assertEquals(9 , converter.convertRomanToInteger("IX"));
         assertEquals(10 , converter.convertRomanToInteger("X"));
     }
+
+    @Test
+    public void romanMCDXLIVShouldConvertToNumber1444(){
+        assertEquals(1444 , converter.convertRomanToInteger("MCDXLIV"));
+    }
+
 }
