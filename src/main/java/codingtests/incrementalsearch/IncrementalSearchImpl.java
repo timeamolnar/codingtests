@@ -14,7 +14,7 @@ public class IncrementalSearchImpl implements IncrementalSearch{
     }
 
     @Override
-    public List<String> search(String serachString) {
+    public List<String> search(String searchString) {
         return null;
     }
 

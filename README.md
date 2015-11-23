@@ -1,6 +1,6 @@
 # Repository for Coding Tests 
 
-**FizzBuzzBasic :**
+**Test 1: FizzBuzzBasic:**
 Write some code that prints out the following for a contiguous range of numbers:
 
 * the number
@@ -18,7 +18,7 @@ e.g. if I run the program over a range from 1-20 I should get the following outp
 
 ```
 
-**IntegerToRomanNumeral :**
+**Test 2: IntegerToRomanNumeral:**
 
 Convert Integer to Roman Numeral using TDD
 
@@ -33,23 +33,25 @@ In Roman numerals 1990 is rendered: 1000=M, 900=CM, 90=XC; resulting in MCMXC.
 1666 uses each Roman symbol in descending order: MDCLXVI.
 
 
-**RomanNumeralToInteger :**
+**Test 3: RomanNumeralToInteger:**
 
 Convert Roman Numeral to Integer using TDD
 
-**List::range :**
+**Test 4: List::range:**
 
 Create a list containing all integers within a given range.
 range(4, 9) -> List(4, 5, 6, 7, 8, 9)
+range(1,1) -> List(1)
+range(1,0) -> error
 
-**List::rotate**
+**Test 5: List::rotate:**
 
 rotate(3, List('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k'))
 result: List[Symbol] = List('d', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'a', 'b', 'c')
 
 -3 should work
 
-**FizzBuzzWithLucky:**
+**Test 6: FizzBuzzWithLucky:**
 
 Enhance your existing FizzBuzz solution to perform the following:
 
@@ -64,7 +66,7 @@ e.g. if I run the program over a range from 1-20 I should get the following outp
 
 ```
 
-**FizzBuzzWithLuckyAndStat:**
+**Test 7: FizzBuzzWithLuckyAndStat:**
 
 Enhance your existing solution to perform the following:
 
@@ -98,7 +100,7 @@ integer: 10
 rotate(-2, List('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k'))
 result: List('j', 'k', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i')
 
-**Incremental Search**
+**Test 8: Incremental Search:**
 
 ![incremental search design](/docs/incsearch.png "incremental search design")
 
