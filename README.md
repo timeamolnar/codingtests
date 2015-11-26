@@ -50,12 +50,14 @@ rotate(3, List('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k'))
 result: List[Symbol] = List('d', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'a', 'b', 'c')
 
 -3 should work
+sizeEqualsRotationNr or rotate by 0 gives back same List
+rotationNrBiggerThanSize should rotate with the difference
 
 **Test 6: FizzBuzzWithLucky:**
 
 Enhance your existing FizzBuzz solution to perform the following:
 
-* If the number contains a three you must output the text 'lucky'. This overrides any existing  behaviour
+* If the number contains a three you must output the text 'lucky'. This overrides any existing behaviour
 
 e.g. if I run the program over a range from 1-20 I should get the following output
 
