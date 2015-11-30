@@ -5,24 +5,23 @@ import java.util.List;
 
 public class ListRotate {
     public<T> List<T> rotate(int rotationNr, List<T> list) {
-        int listSize = list.size();
-
-        if(Math.abs(rotationNr) > listSize) {
-            rotationNr %= listSize;
-        }
+        rotationNr %= list.size();
 
         if(rotationNr > 0) {
-            List<T> newList = new ArrayList<>(list.subList(rotationNr, listSize));
-            newList.addAll(list.subList(0, rotationNr));
-            return newList;
+            return getRotatedList(rotationNr, list, list.size());
         }
 
         if(rotationNr < 0) {
-            List<T> newList = new ArrayList<>(list.subList(listSize + rotationNr, listSize));
-            newList.addAll(list.subList(0, listSize + rotationNr));
-            return newList;
+            return getRotatedList(list.size()+rotationNr, list, list.size());
         }
 
         return list;
     }
+
+    private <T> List<T> getRotatedList(int rotation, List<T> list, int size) {
+        List<T> resultList = new ArrayList<>(list.subList(rotation, size));
+        resultList.addAll(list.subList(0, rotation));
+        return resultList;
+    }
+
 }

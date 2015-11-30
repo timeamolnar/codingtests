@@ -1,6 +1,5 @@
 package codingtests.test5_listrotate;
 
-import codingtests.test4_listrange.ListRange;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
