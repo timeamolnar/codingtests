@@ -61,6 +61,12 @@ public class ListRotateTest {
     }
 
     @Test
+    public void rotateWithMultipliedNegativeListSizeMinus3ShouldReturnRotatedListBackwardsWith3(){
+        assertEquals(Arrays.asList('i', 'j', 'k', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'),
+                listToRotate.rotate(-36, Arrays.asList('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k')));
+    }
+
+    @Test
     public void rotateWithBiggerThanListSizeShouldRotateListWithTheOversizeNumber(){
         assertEquals(Arrays.asList('d', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'a', 'b', 'c'),
                 listToRotate.rotate(14, Arrays.asList('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k')));
