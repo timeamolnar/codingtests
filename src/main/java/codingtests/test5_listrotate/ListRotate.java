@@ -8,18 +8,18 @@ public class ListRotate {
         rotationNr %= list.size();
 
         if(rotationNr > 0) {
-            return getRotatedList(rotationNr, list, list.size());
+            return getRotatedList(rotationNr, list);
         }
 
         if(rotationNr < 0) {
-            return getRotatedList(list.size()+rotationNr, list, list.size());
+            return getRotatedList(list.size()+rotationNr, list);
         }
 
         return list;
     }
 
-    private <T> List<T> getRotatedList(int rotation, List<T> list, int size) {
-        List<T> resultList = new ArrayList<>(list.subList(rotation, size));
+    private <T> List<T> getRotatedList(int rotation, List<T> list) {
+        List<T> resultList = new ArrayList<>(list.subList(rotation, list.size()));
         resultList.addAll(list.subList(0, rotation));
         return resultList;
     }
