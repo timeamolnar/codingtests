@@ -4,19 +4,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ListRotate {
-    public<T> List<T> rotate(int nr, List<T> list) {
-        if(nr > 0) {
-            if(nr > list.size()) {
-                nr -= list.size();
-            }
-            List<T> newList = new ArrayList<>(list.subList(nr,list.size()));
-            newList.addAll(list.subList(0,nr));
+    public<T> List<T> rotate(int rotationNr, List<T> list) {
+        int listSize = list.size();
+
+        if(Math.abs(rotationNr) > listSize) {
+            rotationNr %= listSize;
+        }
+
+        if(rotationNr > 0) {
+            List<T> newList = new ArrayList<>(list.subList(rotationNr, listSize));
+            newList.addAll(list.subList(0, rotationNr));
             return newList;
         }
 
-        if(nr < 0) {
-            List<T> newList = new ArrayList<>(list.subList(list.size()+nr,list.size()));
-            newList.addAll(list.subList(0,list.size()+nr));
+        if(rotationNr < 0) {
+            List<T> newList = new ArrayList<>(list.subList(listSize + rotationNr, listSize));
+            newList.addAll(list.subList(0, listSize + rotationNr));
             return newList;
         }
 

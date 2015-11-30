@@ -31,6 +31,18 @@ public class ListRotateTest {
     }
 
     @Test
+    public void rotateWithMultipliedListSizeShouldReturnList(){
+        assertEquals(Arrays.asList('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k'),
+                listToRotate.rotate(11*3, Arrays.asList('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k')));
+    }
+
+    @Test
+    public void rotateWithMultipliedNegativeListSizeShouldReturnList(){
+        assertEquals(Arrays.asList('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k'),
+                listToRotate.rotate(-11*3, Arrays.asList('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k')));
+    }
+
+    @Test
     public void rotateWith1ShouldReturnRotatedListWith1(){
         assertEquals(Arrays.asList('b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'a'),
                 listToRotate.rotate(1, Arrays.asList('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k')));
@@ -46,6 +58,12 @@ public class ListRotateTest {
     public void rotateWithMinus3ShouldReturnRotatedListBackwardsWith3(){
         assertEquals(Arrays.asList('i', 'j', 'k', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'),
                 listToRotate.rotate(-3, Arrays.asList('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k')));
+    }
+
+    @Test
+    public void rotateWithMultipliedNegativeListSizeMinus3ShouldReturnRotatedListBackwardsWith3(){
+        assertEquals(Arrays.asList('i', 'j', 'k', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'),
+                listToRotate.rotate(-36, Arrays.asList('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k')));
     }
 
     @Test
