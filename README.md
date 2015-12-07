@@ -99,9 +99,6 @@ integer: 10
 ```
 (Integer is 10 because there were 10 numbers that were not altered in any way).
 
-rotate(-2, List('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k'))
-result: List('j', 'k', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i')
-
 **Test 8: Incremental Search:**
 
 ![incremental search design](/docs/incsearch.png "incremental search design")
